@@ -24,7 +24,7 @@ yarn install
 docker-compose up -d
 ```
 
-4. Crear el archivo `.env` en base al ejemplo en `.env.example` y definar las variables de entorno definidas.
+4. Crear el archivo `.env` en base al ejemplo en `.env.example` y definir las variables de entorno del ejemplo.
 
 5. Ejecutar la aplicación en modo desarrollo.
 ```
@@ -34,6 +34,15 @@ yarn start:dev
 6. Reconstruir base de datos.
 ```
 http://localhost:3000/api/seed
+```
+
+# Docker Production Build
+
+1. Crear el archivo `.env` en base al ejemplo en `.env.example` y definir las variables de entorno del ejemplo.
+
+2. Crear la imagen de docker.
+```
+docker-compose -f docker-compose.prod.yaml up --build
 ```
 
 # Stack
