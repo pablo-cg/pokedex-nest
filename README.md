@@ -24,7 +24,14 @@ yarn install
 docker-compose up -d
 ```
 
-4. Reconstruir base de datos.
+4. Crear el archivo `.env` en base al ejemplo en `.env.example` y definar las variables de entorno definidas.
+
+5. Ejecutar la aplicación en modo desarrollo.
+```
+yarn start:dev 
+```
+
+6. Reconstruir base de datos.
 ```
 http://localhost:3000/api/seed
 ```
