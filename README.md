@@ -24,6 +24,11 @@ yarn install
 docker-compose up -d
 ```
 
+4. Reconstruir base de datos.
+```
+http://localhost:3000/api/seed
+```
+
 # Stack
 * NestJS v10
 * MongoDB v5
